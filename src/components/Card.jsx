@@ -10,8 +10,12 @@ const Card = ({ users, handleRemoveUser, index }) => {
           className="h-full w-full rounded-full object-cover"
         />
       </div>
-      <h1 className="mt-1 text-xl font-semibold">{users.name}</h1>
-      <h4 className="text-sm font-semibold opacity-40">{users.email}</h4>
+      <h1 className="mt-1 text-center text-xl leading-none font-semibold">
+        {users.name}
+      </h1>
+      <h4 className="text-center text-sm font-semibold opacity-40">
+        {users.email}
+      </h4>
       <p className="mt-2 text-center text-xs font-semibold tracking-tight">
         {users.description
           ? users.description
